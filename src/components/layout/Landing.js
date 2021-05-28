@@ -18,7 +18,7 @@ const Landing = () => {
                     type="text"
                     id="src"
                     className="db"
-                    data-message="Please enter a source city"
+                    data-message="Please enter city"
                     tabindex="1"
                     autocomplete="off"
                   />
