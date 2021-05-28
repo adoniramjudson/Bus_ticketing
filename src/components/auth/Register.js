@@ -6,7 +6,7 @@ import { register } from "../../actions/auth";
 import PropTypes from "prop-types";
 import facebook from "./../../img/facebook.png";
 
-const Register = ({ setAlert }) => {
+const Register = ({ setAlert, register }) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -35,7 +35,7 @@ const Register = ({ setAlert }) => {
     if (password !== password2) {
       setAlert("Password do not match", "danger");
     } else {
-      console.log(formData);
+      register({ name, email, number, travels, gst });
     }
   };
 
