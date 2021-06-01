@@ -19,10 +19,9 @@ const Login = ({ login, isAuthenticated }) => {
     login(email, password);
   };
 
-  // // Redirect if logged in
-  // if (isAuthenticated) {
-  //   return <Redirect to="/dashboard" />;
-  // }
+  if (isAuthenticated) {
+    return <Redirect to="/landing" />;
+  }
 
   return (
     <Fragment>

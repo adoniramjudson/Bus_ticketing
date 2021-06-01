@@ -9,7 +9,7 @@ import {
 
 // Register User
 export const register =
-  ({ name, email, password }) =>
+  ({ name, email, password, number }) =>
   async (dispatch) => {
     const config = {
       headers: {
